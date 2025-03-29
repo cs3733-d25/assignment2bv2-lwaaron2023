@@ -19,36 +19,7 @@ body, html, #root {
   margin-top: 50px;
 }
 
-.todo-form {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.todo-form input {
-  padding: 8px;
-  width: 200px;
-  margin-right: 8px;
-}
-
-.todo-form button {
-  padding: 8px 12px;
-}
-
-.todo-list {
-  list-style: none;
-}
-
-.todo-list li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-
-.todo-list li.completed span {
-  text-decoration: line-through;
-  color: gray;
+.Title-h1{
+  color: lightcoral;
+  font-family: "Microsoft Himalaya","Comic Sans MS", sans-serif;
 }

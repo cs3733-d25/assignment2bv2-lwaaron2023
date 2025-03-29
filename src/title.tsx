@@ -24,6 +24,6 @@ function getHobbies(hobbies: string[]) {
 
 export default function Title({className, teamNumber, hobbies}: team) {
     return(
-        <h1>{className} Team {teamNumber} : {getHobbies(hobbies)}</h1>
+        <h1 className={"Title-h1"}>{className} Team {teamNumber} : {getHobbies(hobbies)}</h1>
     )
 }
