@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 body, html, #root {
@@ -17,6 +17,16 @@ body, html, #root {
   align-content: center;
   justify-items: center;
   margin-top: 50px;
+}
+
+hr{
+  padding: 0;
+}
+
+.segment{
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .Title-h1{
@@ -54,4 +64,17 @@ body, html, #root {
 
 .Table-row{
   display: flex;
+}
+
+.Form{
+  color: cadetblue;
+  font-family: "Helvetica", sans-serif;
+  text-align: left;
+  display: inline-block;
+}
+
+.Form-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
