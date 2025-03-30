@@ -1,8 +1,8 @@
 import './list.css'
 
 type list<T = string | number | boolean> = {
-    contents: T[]
-    ordered: boolean
+    contents: T[] //the different things being listed, most likely going to be a string
+    ordered: boolean //whether the list is ordered (uses 1,2,3... instead of bullet-points)
 }
 
 export default function List({contents, ordered}:list<string|number|boolean>){
