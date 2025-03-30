@@ -21,5 +21,37 @@ body, html, #root {
 
 .Title-h1{
   color: lightcoral;
-  font-family: "Microsoft Himalaya","Comic Sans MS", sans-serif;
+  font-family: "Microsoft Himalaya", sans-serif;
+}
+
+.Intro-p{
+  color: lightpink;
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: left;
+}
+
+.Table-important-cell{
+  color : seagreen;
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: left;
+  border: 1px solid lightseagreen;
+  border-collapse: collapse;
+  display: inline-block;
+}
+
+.Table-cell{
+  color : lightseagreen;
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: left;
+  border: 1px solid lightseagreen;
+  border-collapse: collapse;
+  display: inline-block;
+}
+
+.Table-empty-cell{
+  display: inline-block;
+}
+
+.Table-row{
+  display: flex;
 }
