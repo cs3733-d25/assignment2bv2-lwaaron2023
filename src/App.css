@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 body, html, #root {
@@ -19,36 +19,66 @@ body, html, #root {
   margin-top: 50px;
 }
 
-.todo-form {
-  margin-top: 20px;
-  margin-bottom: 20px;
+hr{
+  padding: 0;
 }
 
-.todo-form input {
-  padding: 8px;
-  width: 200px;
-  margin-right: 8px;
+.segment{
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.todo-form button {
-  padding: 8px 12px;
+.Title-h1{
+  color: lightcoral;
+  font-family: "Microsoft Himalaya", sans-serif;
 }
 
-.todo-list {
-  list-style: none;
+.Intro-p{
+  color: lightpink;
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: left;
 }
 
-.todo-list li {
+.Table-important-cell{
+  color : seagreen;
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: left;
+  border: 1px solid lightseagreen;
+  border-collapse: collapse;
+  display: inline-block;
+}
+
+.Table-cell{
+  color : lightseagreen;
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: left;
+  border: 1px solid lightseagreen;
+  border-collapse: collapse;
+  display: inline-block;
+}
+
+.Table-empty-cell{
+  display: inline-block;
+}
+
+.Table-row{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
 }
 
+.Form{
+  color: cadetblue;
+  font-family: "Helvetica", sans-serif;
+  text-align: left;
+  display: inline-block;
+}
 
-.todo-list li.completed span {
-  text-decoration: line-through;
-  color: gray;
+.Form-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+label.segment{
+  padding-left: 10px;
 }
