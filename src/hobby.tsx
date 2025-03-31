@@ -10,6 +10,15 @@ type hobby = {
     tables: table[] //all the tables
     lists: list<string>[] //all the lists
     paragraphs: introduction[] //all the paragraphs
+    imgs: img[] //all the images
+
+}
+
+type img = {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
 }
 
 type header = {
@@ -17,9 +26,9 @@ type header = {
     text: string
 }
 
-export default function Hobby({orderings, forms, headers, tables, lists, paragraphs}:hobby){
+export default function Hobby({orderings, forms, headers, tables, lists, paragraphs, imgs}:hobby){
     const temp = []
-    const indices = [0,0,0,0,0]
+    const indices = [0,0,0,0,0,0]
     //if the code doesn't recognize the tag it will put a <br/> tag
     for(let i = 0; i < orderings.length; i++){
         switch(orderings[i]){
@@ -89,6 +98,14 @@ export default function Hobby({orderings, forms, headers, tables, lists, paragra
                     const p = paragraphs[indices[4]]
                     temp[i] = <Intro person={""} paragraph={p.paragraph}></Intro>
                     indices[4]++
+                }
+                break
+
+            case "image":
+                if(indices[5] < paragraphs.length) {
+                    const im = imgs[indices[5]]
+                    temp[i] = <img src = {im.src} alt = {im.alt} width={im.width} height={im.height}></img>
+                    indices[5]++
                 }
                 break
 

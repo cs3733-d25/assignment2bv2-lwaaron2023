@@ -43,7 +43,7 @@ export default function App() {
         <hr/>
         <br/>
         <div className={"segment"}>
-            <Hobby orderings={["header","paragraph","list","table"]}
+            <Hobby orderings={["image","","header","paragraph","list","table"]}
                    forms={[]}
                    headers={[{"num": 2,"text":"About My Hobby"}]}
                    tables={[{
@@ -69,7 +69,8 @@ export default function App() {
                            "I then reached out to organizations such as Computers4People to try and connect with like-minded people while doing good in the world.",
                            "Through my experiences I have found that many people simply get rid of computers due to their age instead of trying to update or replace broken parts.",
                            "Over the past 3ish years, I have been able to refurbish between 150-200 computers",
-                           "I have designed a general process for each repair:"]}]}></Hobby>
+                           "I have designed a general process for each repair:"]}]}
+                   imgs={[{src:"src/imgs/badMotherboard.jpg", alt:"Picture of Motherboard On Fire", width:640, height:640}]}></Hobby>
         </div>
         <br/>
         <hr/>
@@ -103,7 +104,8 @@ export default function App() {
                    headers={[{"num": 2,"text":"Contact Me"}]}
                    tables={[]}
                    lists={[]}
-                   paragraphs={[]}></Hobby>
+                   paragraphs={[]}
+                   imgs={[]}></Hobby>
         </div>
         <br/>
         <hr/>
