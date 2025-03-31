@@ -1,4 +1,4 @@
-type introduction = {
+export type introduction = {
     person: string //the name of the person, "" assumes that their name was mentioned already
     paragraph: string[] //a paragraph written where each string is a line
 }

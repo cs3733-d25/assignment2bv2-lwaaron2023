@@ -37,7 +37,7 @@ type paragraph = {
     text: string
 }
 
-type form = {
+export type form = {
     /*
     Forms include:
     1) label

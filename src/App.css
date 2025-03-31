@@ -24,7 +24,7 @@ hr{
 }
 
 .segment{
-  font-size: 12px;
+  font-size: 15px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -77,4 +77,8 @@ hr{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+
+label.segment{
+  padding-left: 10px;
 }
