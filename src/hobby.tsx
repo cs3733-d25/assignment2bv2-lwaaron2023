@@ -113,7 +113,5 @@ export default function Hobby({orderings, forms, headers, tables, lists, paragra
                 temp[i] = <br/>
         }
     }
-    return (<div className={"Form-container"}>
-        <form className={"Form"}>{temp}</form>
-    </div>)
+    return (<>{temp}</>)
 }
