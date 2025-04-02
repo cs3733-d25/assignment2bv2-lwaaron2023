@@ -123,7 +123,7 @@ export default function App() {
                        forms={[]}
                        headers={[{"num": 2,"text":"About My Hobby"}]}
                        tables={[{
-                           rows:[["Tournament Name", "Time & Locations", "Winners"],
+                           rows:[["Tournaments' Name", "Time & Locations", "Winners"],
                                ["Australian Open","14 to 28 January, 2024, Melbourne Park, Melbourne, Australia","Men's singles champion: Novak Djokovic, Women's singles champion: Aryna Sabalenka"],
                                ["French Open","May 25 to Jun 8, 2024, Stade Roland Garros, Paris, French","Men's singles champion: Carlos Alcaraz, Women's singles champion: Iga Świątek"],
                                ["US Open","August 19 to 22, 2024, USTA National Tennis Center, New York City, US","Men's singles champion:Novak Djokovic, Women's singles champion: Coco Gauff"],
