@@ -50,7 +50,7 @@ export default function App() {
             <div className="section">
                 <Hobby orderings={["header","image", "paragraph","list","table"]}
                        forms={[]}
-                       headers={[{"num": 2,"text":"About My Hobby"}]}
+                       headers={[{"num": 2,"text":"About My Hobby (Aaron)"}]}
                        tables={[{
                            rows:[["Name", "Headquarters Locations", "What happens to donations"],
                                ["Computers4People","Hoboken, New Jersey","Sent to public schools and other organizations to combat lack of digital access"],
@@ -121,7 +121,7 @@ export default function App() {
             <div className="section">
                 <Hobby orderings={["header","image", "paragraph","list","table"]}
                        forms={[]}
-                       headers={[{"num": 2,"text":"About My Hobby"}]}
+                       headers={[{"num": 2,"text":"About My Hobby (Haotian)"}]}
                        tables={[{
                            rows:[["Tournaments' Name", "Time & Locations", "Winners"],
                                ["Australian Open","14 to 28 January, 2024, Melbourne Park, Melbourne, Australia","Men's singles champion: Novak Djokovic, Women's singles champion: Aryna Sabalenka"],
