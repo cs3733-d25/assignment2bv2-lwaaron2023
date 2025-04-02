@@ -15,15 +15,15 @@ type hobby = {
 }
 
 type img = {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
+    src: string; //fills the "src" for the img
+    alt: string; //fills the "alt" for the img
+    width: number;//fills the "width" for the img
+    height: number;//fills the "height" for the img
 }
 
 type header = {
-    num: number
-    text: string
+    num: number //what type of header
+    text: string //the innerText for the header
 }
 
 export default function Hobby({orderings, forms, headers, tables, lists, paragraphs, imgs}:hobby){
@@ -33,6 +33,7 @@ export default function Hobby({orderings, forms, headers, tables, lists, paragra
     for(let i = 0; i < orderings.length; i++){
         switch(orderings[i]){
             case "form":
+                //create a Form to add to the hobby
                 if(indices[0] < forms.length) {
                     const f = forms[indices[0]]
                     temp[i] = <Form selects={f.selects} labels={f.labels} textareas={f.textareas} inputs={f.inputs} buttons={f.buttons} paragraphs={f.paragraphs} orderings={f.orderings}></Form>
@@ -41,6 +42,7 @@ export default function Hobby({orderings, forms, headers, tables, lists, paragra
                 break
 
             case "header":
+                //creates a header to add to the hobby
                 if(indices[1] < headers.length) {
                     const h = headers[indices[1]]
                     switch(h.num){
@@ -78,6 +80,7 @@ export default function Hobby({orderings, forms, headers, tables, lists, paragra
                 break
 
             case "table":
+                //creates a Table to add to the hobby
                 if(indices[2] < tables.length) {
                     const t = tables[indices[2]]
                     temp[i] = <Table rows={t.rows} headerRow={t.headerRow} headerCol={t.headerCol} caption={t.caption}></Table>
@@ -86,6 +89,7 @@ export default function Hobby({orderings, forms, headers, tables, lists, paragra
                 break
 
             case "list":
+                //creates a List to add to the hobby
                 if(indices[3] < lists.length) {
                     const l = lists[indices[3]]
                     temp[i] = <List contents={l.contents} ordered={l.ordered}></List>
@@ -94,6 +98,7 @@ export default function Hobby({orderings, forms, headers, tables, lists, paragra
                 break
 
             case "paragraph":
+                //creates a paragraph to add to the hobby
                 if(indices[4] < paragraphs.length) {
                     const p = paragraphs[indices[4]]
                     temp[i] = <Intro person={""} paragraph={p.paragraph}></Intro>
@@ -102,6 +107,7 @@ export default function Hobby({orderings, forms, headers, tables, lists, paragra
                 break
 
             case "image":
+                //creates an img to add to the hobby
                 if(indices[5] < paragraphs.length) {
                     const im = imgs[indices[5]]
                     temp[i] = <img src = {im.src} alt = {im.alt} width={im.width} height={im.height}></img>
